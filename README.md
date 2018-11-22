@@ -7,6 +7,7 @@
 4. Click on "Install a Program"
 5. Run through the steps to install the program
 > When the program asks to install a program, choose the file that you downloaded in step 2
+
 > Just click "__next__" through all of the steps of the installer
 6. When the program asks to make a shortcut, choose "__RobotC.exe__"
 7. Choose the option to indicate that you want no further shortcuts in the next step
