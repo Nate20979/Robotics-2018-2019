@@ -13,7 +13,7 @@
 8. When the installation is complete, **_single_** click the application shortcut in the menu
 9. Click on configure
 10. Choose the shortcut that you created in the menu that appears
-11. Click on the ""**_+_**"" icon next to the "Wine Version" dropdown menu
+11. Click on the "**_+_**" icon next to the "Wine Version" dropdown menu
 12. In the 32-bit menu that opens, choose the wine version "3.20" from the left panel
 13. Click the arrow in the middle of the screen pointing towards the right panel
     * Follow all installation steps
