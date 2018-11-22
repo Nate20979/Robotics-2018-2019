@@ -22,6 +22,7 @@
 16. Close the configuration menu
 17. Congratulations! You should be able to run the "RobotC" application on a Mac.
 
+---
 
 You should be aware of the fact that you cannot send code to your robot using this method, but almost all other functions work within the application.
 
