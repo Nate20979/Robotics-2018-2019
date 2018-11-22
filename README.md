@@ -8,6 +8,8 @@
 5. Run through the steps to install the program
 > When the program asks for a name for a virtual drive, type "**_ROBOTC_**"
 
+> Click on the "**_Configure Wine_**" check box when given the option and choose the 32-bit option.
+
 > When the program asks to install a program, choose the file that you downloaded in step 2
 
 > Just click "__next__" through all of the steps of the installer
@@ -34,3 +36,4 @@ You should be aware of the fact that you cannot send code to your robot using th
 
 [playonmac]: https://www.playonmac.com/en/
 [msi installer]: http://www.robotc.net/release/vexrobotics/msi/
+
