@@ -6,6 +6,8 @@
 3. Open the Play on Mac application
 4. Click on "Install a Program"
 5. Run through the steps to install the program
+> When the program asks for a name for a virtual drive, type "**_ROBOTC_**"
+
 > When the program asks to install a program, choose the file that you downloaded in step 2
 
 > Just click "__next__" through all of the steps of the installer
