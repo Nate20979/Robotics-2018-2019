@@ -1,7 +1,7 @@
 # Robotics 2018-2019
 
 ### Steps to install RobotC on Mac
-1. Download and install [PlayonMac][playonmac]
+1. Download and install [Play on Mac][playonmac]
 2. Download the [RobotC .msi installer][msi installer]
 3. Open the Play on Mac application
 4. Click on "Install a Program"
