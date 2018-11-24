@@ -7,15 +7,20 @@ task main()
 
 while(true) {
 
-	if (vexRT[Ch2] == 0) {
+	 if (vexRT[Btn6D] != 0) {
+			motor[leftMotor] = 0;
+			motor[rightMotor] = 0;
+		}
+
+	else if (vexRT[Ch2] == 0) {
 		if (vexRT[Ch1] != 0) {
 			if (vexRT[Ch1] > 0) {
-				motor[leftMotor] = (vexRT[Ch1] / 2);
-				motor[rightMotor] = -(vexRT[Ch1] / 2);
+				motor[leftMotor] = (vexRT[Ch1] );
+				motor[rightMotor] = -(vexRT[Ch1]);
 			}
 			else if (vexRT[Ch1] < 0) {
-				motor[leftMotor] = (vexRT[Ch1] / 2);
-				motor[rightMotor] = -(vexRT[Ch1] / 2);
+				motor[leftMotor] = (vexRT[Ch1]);
+				motor[rightMotor] = -(vexRT[Ch1]);
 			}
 		}
 	}
@@ -44,6 +49,7 @@ while(true) {
 			motor[leftMotor] = vexRT[Ch2] + abs(vexRT[Ch1]);
 			motor[rightMotor] = vexRT[Ch2];
 		}
+
 	}
 
 
