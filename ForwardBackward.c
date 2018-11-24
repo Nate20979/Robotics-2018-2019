@@ -27,7 +27,24 @@ while(true) {
 		}
 	}
 
-
+	else if (vexRT[Ch1] != 0 && vexRT[Ch2] != 0) {
+		if (vexRT[Ch2] > 0 && vexRT[Ch1] > 0) {
+			motor[leftMotor] = vexRT[Ch2];
+			motor[rightMotor] = vexRT[Ch2] - abs(vexRT[Ch1]);
+		}
+		else if (vexRT[Ch2] > 0 && vexRT[Ch1] < 0) {
+			motor[leftMotor] = vexRT[Ch2] - abs(vexRT[Ch1]);
+			motor[rightMotor] = vexRT[Ch2];
+		}
+		else if (vexRT[Ch2] < 0 && vexRT[Ch1] > 0) {
+			motor[leftMotor] = vexRT[Ch2];
+			motor[rightMotor] = vexRT[Ch2] + abs(vexRT[Ch1]);
+		}
+		else if (vexRT[Ch2] < 0 && vexRT[Ch1] < 0) {
+			motor[leftMotor] = vexRT[Ch2] + abs(vexRT[Ch1]);
+			motor[rightMotor] = vexRT[Ch2];
+		}
+	}
 
 
 }
