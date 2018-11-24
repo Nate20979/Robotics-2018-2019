@@ -12,12 +12,12 @@ while(true) {
 	//}
 	if (vexRT[Ch1] > 0 || vexRT[Ch1] < 0) {
 		if (vexRT[Ch1] > 0) {
-			motor[leftMotor] = vexRT[Ch1];
-			motor{rightMotor] = -vexRT[Ch1];
+			motor[leftMotor] = (vexRT[Ch1] / 2);
+			motor[rightMotor] = -(vexRT[Ch1] / 2);
 		}
 		else if (vexRT[Ch1] < 0) {
-			motor[leftMotor] = -vexRT[Ch1];
-			motor[rightMotor] = vexRT[Ch1];
+			motor[leftMotor] = -(vexRT[Ch1] / 2);
+			motor[rightMotor] = (vexRT[Ch1] / 2);
 		}
 	}
 
