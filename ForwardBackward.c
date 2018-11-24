@@ -6,8 +6,8 @@ task main()
 {
 
 while(true) {
-	rightMotor = vexRT[Ch2];
-	leftMotor = vexRT[Ch2];
+	motor[rightMotor] = vexRT[Ch2];
+	motor[leftMotor] = vexRT[Ch2];
 }
 
 }
