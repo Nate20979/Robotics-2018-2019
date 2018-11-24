@@ -6,8 +6,21 @@ task main()
 {
 
 while(true) {
-	motor[rightMotor] = vexRT[Ch2];
-	motor[leftMotor] = vexRT[Ch2];
+	//if (vexRT[Ch2] > 0 || vexRT[Ch2] < 0) {
+		//motor[rightMotor] = vexRT[Ch2];
+		//motor[leftMotor] = vexRT[Ch2];
+	//}
+	if (vexRT[Ch1] > 0 || vexRT[Ch1] < 0) {
+		if (vexRT[Ch1] > 0) {
+			motor[leftMotor] = vexRT[Ch1];
+			motor{rightMotor] = -vexRT[Ch1];
+		}
+		else if (vexRT[Ch1] < 0) {
+			motor[leftMotor] = -vexRT[Ch1];
+			motor[rightMotor] = vexRT[Ch1];
+		}
+	}
+
 }
 
 }
