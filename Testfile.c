@@ -1,3 +1,4 @@
+#pragma config(Sensor, in5,    light1,         sensorReflection)
 #pragma config(Sensor, dgtl1,  limit1,         sensorTouch)
 #pragma config(Motor,  port2,           leftMotor,     tmotorServoContinuousRotation, openLoop, driveLeft)
 #pragma config(Motor,  port3,           rightMotor,    tmotorServoContinuousRotation, openLoop, reversed, driveRight)
@@ -7,15 +8,17 @@ task main()
 {
 
 while (1==1) {
-	if (SensorValue[limit1] == 1) {
-		sleep(3000); //Wait 3 seconds before starting
-		setMotor(leftMotor, 40); //Set the left Motor speed to 40
-		setMotor(rightMotor, -40); //Set the right Motor speed to -40
-		sleep(2000); //Turn on the motors for 2 seconds
+	if (SensorValue[light1] >= 4000) {
+		setMotorSpeed(leftMotor, 127);
+		setMotorSpeed(rightMotor, 127);
+	}
+	else if (SensorValue[light1] <= 250) {
+		setMotorSpeed(leftMotor, -127);
+		setMotorSpeed(rightMotor, -127);
 	}
 	else {
-		setMotor(leftMotor, 0);
-		setMotor(rightMotor, 0);
+		setMotorSpeed(leftMotor, 0);
+		setMotorSpeed(rightMotor, 0);
 	}
 
 }
