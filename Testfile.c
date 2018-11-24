@@ -7,16 +7,20 @@
 task main() {
 
 while (1==1) {
-	if (SensorValue[limit1] == 1) {
-		setMotor(leftMotor, 100); //Set the left Motor speed to 40
-		setMotor(rightMotor, 100); //Set the right Motor speed to -40
+	if (SensorValue[light1] >= 4000) {
+		setMotorSpeed(leftMotor, 127);
+		setMotorSpeed(rightMotor, 127);
+	}
+	else if (SensorValue[light1] <= 250) {
+		setMotorSpeed(leftMotor, -127);
+		setMotorSpeed(rightMotor, -127);
+
 	}
 	else {
-		setMotor(leftMotor, 0);
-		setMotor(rightMotor, 0);
-	}
-	if (SensorValue[light1] == 0) {
+		setMotorSpeed(leftMotor, 0);
 		setMotorSpeed(rightMotor, 0);
 	}
 
-}}
+}
+  
+}
