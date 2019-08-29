@@ -4,6 +4,7 @@
 3. Open the Play on Mac application
 4. Click on "Install a Program"
 5. Run through the steps to install the program
+
 > When the program asks for a name for a virtual drive, type "**_ROBOTC_**"
 
 > Click on the "**_Configure Wine_**" check box when given the option and choose the 32-bit option.
@@ -11,6 +12,7 @@
 > When the program asks to install a program, choose the file that you downloaded in step 2
 
 > Just click "__next__" through all of the steps of the installer
+
 6. When the program asks to make a shortcut, choose "__RobotC.exe__"
 7. Choose the option to indicate that you want no further shortcuts in the next step
 8. When the installation is complete, **_single_** click the application shortcut in the menu
